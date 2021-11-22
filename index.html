@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <a href="javascript:void(0)" onclick="showMesg()">CLICK HERE !!!</a>
+
+    <br>
+    
+    <img src="./img/TecnoCamon15Pro-b.jpg" onclick="phone1()" width="250px" alt="">
+    <img src="./img/TecnoCamon16Premier-b.jpg" onclick="phone1()" width="250px" alt="">
+    <img src="./img/TecnoCamon17Pro-b.jpg" onclick="phone1()" width="250px" alt="">
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>S.no</th>
+            <th>student name</th>
+            <th>roll no</th>
+            <th>remove student</th>
+        </tr>
+        <tr id="student1">
+            <td>1</td>
+            <td>student1</td>
+            <td>1234</td>
+            <td><a href="javascript:void(0)" onclick="std1()" id="del1">delete</a></td>
+        </tr>
+        <tr id="student2">
+            <td>2</td>
+            <td>student2</td>
+            <td>3546</td>
+            <td><a href="javascript:void(0)" onclick="std2();">delete</a></td>
+        </tr>
+        <tr id="student3">
+            <td>3</td>
+            <td>student3</td>
+            <td>4556</td>
+            <td><a href="javascript:void(0)" onclick="std3()">delete</a></td>
+        </tr>
+        <tr id="student4">
+            <td>4</td>
+            <td>student4</td>
+            <td>5780</td>
+            <td><a href="javascript:void(0)" onclick="std4()">delete</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+ <div class="images">
+        <img id="results" onmouseover="pictureOne()" onmouseout="pictureTwo()"
+            src="./img/pexels-photo-206359.jpeg" width="250px">
+    </div>
+
+    <br>
+    <div>
+        <h3 id="counter-label">0</h3>
+        <button onclick="increment()">Increment</button>
+        <button onclick="decrease()">Decrement</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
